@@ -1,2 +1,2 @@
-# CattyMod Desktop
-This is the official CattyMod Desktop Application!
+# CashMod Desktop
+Coming Soon Whenever I feel Like it.
