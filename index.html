@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CattyMod Desktop</title>
+
+<link rel="icon" href="https://cattymod.app/images/apple-touch-icon.png">
+
+<style>
+:root{
+    --bg:#0b0f1a;
+    --panel:#121a2a;
+    --text:#e8eefc;
+    --muted:#a9b4c7;
+    --accent:#38bdf8;
+    --border:rgba(255,255,255,0.06);
+
+    /* UPDATED */
+    --green:#ff8c1a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:920px;
+    padding:60px 24px;
+    text-align:center;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:28px;
+}
+
+.logo{
+    width:64px;
+    height:64px;
+}
+
+.title{
+    font-size:26px;
+    font-weight:700;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-top:10px;
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:16px;
+    margin-top:12px;
+    line-height:1.5;
+}
+
+.buttons{
+    margin-top:22px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:10px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+    position:relative;
+}
+
+.btn.primary{
+    background:var(--accent);
+    color:#001018;
+}
+
+.btn.primary:hover{
+    filter:brightness(1.1);
+}
+
+.recommended{
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    background:var(--green);
+    color:#ffffff;
+    font-size:10px;
+    font-weight:800;
+    padding:4px 6px;
+    border-radius:6px;
+}
+
+.btn.secondary{
+    background:transparent;
+    color:var(--text);
+    border:1px solid var(--border);
+}
+
+.installnote{
+    margin-top:10px;
+    font-size:12px;
+    color:#7f8aa3;
+}
+
+.screenshot img{
+    width:100%;
+    max-width:680px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    margin-top:35px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.45);
+}
+
+.features{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    padding:14px;
+    border-radius:10px;
+}
+
+.card h3{
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+.card p{
+    font-size:13px;
+    color:var(--muted);
+}
+
+.footer{
+    margin-top:50px;
+    font-size:12px;
+    color:#7f8aa3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img class="logo" src="https://cattymod.app/images/apple-touch-icon.png">
+        <div class="title">CattyMod Desktop</div>
+    </div>
+
+    <div class="hero">
+        <h1>Scratch, but faster — offline.</h1>
+
+        <p>
+            Official CattyMod Desktop release (Latest).<br>
+
+        <div class="buttons">
+
+            <a class="btn primary"
+               href="https://github.com/cattymod/desktop/releases/download/Build1/editor.zip">
+                Download Editor
+                <span class="recommended">Recommended</span>
+            </a>
+
+        </div>
+
+        <div class="installnote">
+            After Installing, extract the zip and open index.html
+        </div>
+    </div>
+
+    <div class="screenshot">
+        <img src="https://raw.githubusercontent.com/cattymod/desktop/refs/heads/main/screenshot-1782040413275.png">
+    </div>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Official Release</h3>
+            <p>Direct CattyMod team build.</p>
+        </div>
+
+        <div class="card">
+            <h3>Offline Support</h3>
+            <p>Works without internet after download.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fast and filled with features</h3>
+            <p>Use addons and more!</p>
+        </div>
+
+        <div class="card">
+            <h3>Scratch Enhanced</h3>
+            <p>Extended features for creators.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+Made with 💖 by The CattyMod Team  </div>
+
+</div>
+
+</body>
+</html>
